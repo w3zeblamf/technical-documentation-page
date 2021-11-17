@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<!--freeCodeCamp Web Responsive Certification.
+- Project Name: Product Landing Page
+- GitHub Repository link: 
+***************************************** -->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome 6.0.0-beta2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+
+    <!-- My CSS stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>Technical Documentation Page</title>
+
+    <link
+      type="image/x-icon"
+      rel="shortcut icon"
+      href="https://w3zeblamf.github.io/product-landing-page/images/coding-favicon.jpg"
+    />
+  </head>
+
+  <body>
+    <!--https://developer.mozilla.org/en-US/docs/Learn/CSS-->
+
+    <nav id="navbar">
+      <header class="main-title">CSS Documentation</header>
+      <a href="#introduction" class="nav-link">
+        <i class="far fa-file-code"></i> Introduction
+      </a>
+      <a href="#Leaning_pathway" class="nav-link"
+        ><i class="far fa-file-code"></i> Leaning pathway</a
+      >
+      <a href="#Modules" class="nav-link"
+        ><i class="far fa-file-code"></i> Modules</a
+      >
+      <a href="#Solving_common_CSS_problems" class="nav-link"
+        ><i class="far fa-file-code"></i> Solving common CSS problems</a
+      >
+      <a href="#What_is_CSS?" class="nav-link"
+        ><i class="far fa-file-code"></i> What is CSS?</a
+      >
+      <a href="#What_is_CSS_for?" class="nav-link"
+        ><i class="far fa-file-code"></i> What is CSS for?</a
+      >
+      <a href="#CSS_syntax" class="nav-link"
+        ><i class="far fa-file-code"></i> CSS syntax</a
+      >
+      <a href="#CSS_reference" class="nav-link"
+        ><i class="far fa-file-code"></i> CSS reference</a
+      >
+      <a href="#See_also" class="nav-link"
+        ><i class="fas fa-book"></i> See also</a
+      >
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="introduction">
+        <header class="intro-title">Introduction</header>
+        <p>
+          Cascading Stylesheets — or CSS — is the first technology you should
+          start learning after HTML. While HTML is used to define the structure
+          and semantics of your content, CSS is used to style it and lay it out.
+          For example, you can use CSS to alter the font, color, size, and
+          spacing of your content, split it into multiple columns, or add
+          animations and other decorative features.
+        </p>
+
+        <div class="callout">
+          <h4>Looking to become a front-end web developer?</h4>
+          <p>
+            We have put together a course that includes all the essential
+            information you need to work towards your goal.
+          </p>
+          <p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Learn/Front-end_web_developer"
+              target="_blank"
+              title="developer.mozilla.org"
+              style="text-decoration: underline"
+              ><strong>Get started</strong></a
+            >
+          </p>
+        </div>
+      </section>
+
+      <section class="main-section" id="Leaning_pathway">
+        <header>Leaning pathway</header>
+        <p>
+          You should learn the basics of HTML before attempting any CSS. We
+          recommend that you work through our Introduction to HTML module first.
+          In that module, you will lear about:
+        </p>
+
+        <ul>
+          <li style="list-style-type: disc">HTML basics</li>
+          <li style="list-style-type: disc">More advanced HTML modules</li>
+          <li style="list-style-type: disc">
+            CSS, starting with the introduction to CSS module
+          </li>
+          <li style="list-style-type: disc">CSS basics</li>
+          <li style="list-style-type: disc">JavaScript Basics</li>
+          <li style="list-style-type: disc">
+            JavaScript, and how to use it to add dynamic functionality to the
+            web page
+          </li>
+        </ul>
+
+        <p>
+          Once you understand the fundamentals of HTML, we recommend that you
+          learn further HTML and CSS at the same time, moving back and forth
+          between the two topics. This is because HTML is far more interesting
+          and much more fun to learn when you apply CSS, and you can't really
+          learn CSS without knowing HTML.
+        </p>
+
+        <p>
+          Before starting this topic, you should also be familiar with using
+          computers and using the web passively (i.e., just looking at it,
+          consuming the content). You should have a basic work environment set
+          up as detailed in Installing basic software and understand how to
+          create and manage files, as detailed in Dealing with files — both of
+          which are parts of our Getting started with the web complete
+          beginner's module.
+        </p>
+      </section>
+
+      <section class="main-section" id="Modules">
+        <header>Modules</header>
+        <p>
+          This topic contains the following modules, in a suggested order for
+          working through them. You should definitely start with the first one.
+          <br /><br />
+
+          <strong>CSS first steps</strong> <br /><br />
+          CSS (Cascading Style Sheets) is used to style and lay out web pages —
+          for example, to alter the font, color, size, and spacing of your
+          content, split it into multiple columns, or add animations and other
+          decorative features. This module provides a gentle beginning to your
+          path towards CSS mastery with the basics of how it works, what the
+          syntax looks like, and how you can start using it to add styling to
+          HTML.<br /><br />
+
+          <strong>CSS building blocks</strong><br /><br />
+          This module carries on where CSS first steps left off — now you've
+          gained familiarity with the language and its syntax, and got some
+          basic experience with using it, its time to dive a bit deeper. This
+          module looks at the cascade and inheritance, all the selector types we
+          have available, units, sizing, styling backgrounds and borders,
+          debugging, and lots more. The aim here is to provide you with a
+          toolkit for writing competent CSS and help you understand all the
+          essential theory, before moving on to more specific disciplines like
+          text styling and CSS layout.<br /><br />
+
+          <strong>Styling text</strong><br /><br />
+          With the basics of the CSS language covered, the next CSS topic for
+          you to concentrate on is styling text — one of the most common things
+          you'll do with CSS. Here we look at text styling fundamentals,
+          including setting font, boldness, italics, line and letter spacing,
+          drop shadows and other text features. We round off the module by
+          looking at applying custom fonts to your page, and styling lists and
+          links.<br /><br />
+
+          <strong>CSS layout</strong><br /><br />
+          At this point we've already looked at CSS fundamentals, how to style
+          text, and how to style and manipulate the boxes that your content sits
+          inside. Now it's time to look at how to place your boxes in the right
+          place in relation to the viewport, and one another. We have covered
+          the necessary prerequisites so we can now dive deep into CSS layout,
+          looking at different display settings, modern layout tools like
+          flexbox, CSS grid, and positioning, and some of the legacy techniques
+          you might still want to know about.
+        </p>
+      </section>
+
+      <section class="main-section" id="Solving_common_CSS_problems">
+        <header>Solving common CSS problems</header>
+
+        <p>
+          Use CSS to solve common problems provides links to sections of content
+          explaining how to use CSS to solve very common problems when creating
+          a web page.
+        </p>
+
+        <p>
+          From the beginning, you'll primarily apply colors to HTML elements and
+          their backgrounds; change the size, shape, and position of elements;
+          and add and define borders on elements. But there's not much you can't
+          do once you have a solid understanding of even the basics of CSS. One
+          of the best things about learning CSS is that once you know the
+          fundamentals, usually you have a pretty good feel for what can and
+          can't be done, even if you don't actually know how to do it yet!
+        </p>
+      </section>
+
+      <section class="main-section" id="What_is_CSS?">
+        <header>What is CSS?</header>
+        <p>
+          CSS (Cascading Style Sheets) allows you to create great-looking web
+          pages, but how does it work under the hood? This article explains what
+          CSS is, with a simple syntax example, and also covers some key terms
+          about the language.
+        </p>
+      </section>
+
+      <section class="main-section" id="What_is_CSS_for?">
+        <header>What is CSS for?</header>
+        <p>
+          As we have mentioned before, CSS is a language for specifying how
+          documents are presented to users — how they are styled, laid out, etc.
+          <br /><br />
+
+          A <strong>document</strong> is usually a text file structured using a
+          markup language — HTML is the most common markup language, but you may
+          also come across other markup languages such as SVG or XML.
+          <br /><br />
+
+          <strong>Presenting</strong> a document to a user means converting it
+          into a form usable by your audience. Browsers, like Firefox, Chrome,
+          or Edge , are designed to present documents visually, for example, on
+          a computer screen, projector or printer. <br /><br />
+
+          CSS can be used for very basic document text styling — for example
+          changing the color and size of headings and links. It can be used to
+          create layout — for example turning a single column of text into a
+          layout with a main content area and a sidebar for related information.
+          It can even be used for effects such as animation. Have a look at the
+          links in this paragraph for specific examples.
+        </p>
+
+        <div class="callout">
+          <h4><strong>Note:</strong></h4>
+          <p>
+            You can find links to all the CSS property pages (along with other
+            CSS features) listed on the MDN CSS reference. Alternatively, you
+            should get used to searching for "mdn css-feature-name" in your
+            favorite search engine whenever you need to find out more
+            information about a CSS feature. For example, try searching for "mdn
+            color" and "mdn font-size"!
+          </p>
+        </div>
+      </section>
+
+      <section class="main-section" id="CSS_syntax">
+        <header>CSS syntax</header>
+        <p>
+          CSS is a rule-based language — you define rules specifying groups of
+          styles that should be applied to particular elements or groups of
+          elements on your web page. For example "I want the main heading on my
+          page to be shown as large red text."
+        </p>
+
+        <p>
+          The following code shows a very simple CSS rule that would achieve the
+          styling described above:
+        </p>
+
+        <pre>
+        <code>   
+        <span class="selector">h1</span>   {  
+               <span class="property">color</span>:  red;
+               <span class="property">font-size</span>:  5em;
+        }    
+        </code>
+    </pre>
+
+        <p>
+          The rule opens with a selector . This selects the HTML element that we
+          are going to style. In this case we are styling level one headings
+          (&lt; h1 &gt;).
+        </p>
+
+        <p>
+          We then have a set of curly braces { }. Inside those will be one or
+          more declarations, which take the form of property and value pairs.
+          Each pair specifies a property of the element(s) we are selecting,
+          then a value that we'd like to give the property.
+        </p>
+
+        <p>
+          Before the colon, we have the property, and after the colon, the
+          value. CSS properties have different allowable values, depending on
+          which property is being specified. In our example, we have the color
+          property, which can take various color values. We also have the
+          font-size property. This property can take various size units as a
+          value.
+        </p>
+
+        <p>
+          A CSS stylesheet will contain many such rules, written one after the
+          other.
+        </p>
+
+        <pre>
+        <code>   
+        <span class="selector">h1</span>   {  
+               <span class="property">color</span>:  red;
+               <span class="property">font-size</span>:  5em;
+        }    
+        </code>
+        
+        <code>   
+        <span class="selector">p</span>   {  
+               <span class="property">color</span>:  black;
+        }    
+        </code>
+    </pre>
+
+        <p>
+          You will find that you quickly learn some values, whereas others you
+          will need to look up. The individual property pages on MDN give you a
+          quick way to look up properties and their values when you forget, or
+          want to know what else you can use as a value.
+        </p>
+
+        <div class="callout">
+          <h4><strong>Note:</strong></h4>
+          <p>
+            You can find links to all the CSS property pages (along with other
+            CSS features) listed on the MDN
+            <a style="text-decoration: underline"
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference"
+              >CSS reference</a
+            >. Alternatively, you should get used to searching for "mdn
+            css-feature-name" in your favorite search engine whenever you need
+            to find out more information about a CSS feature. For example, try
+            searching for "mdn color" and "mdn font-size"!
+          </p>
+        </div>
+      </section>
+
+      <section class="main-section" id="CSS_reference">
+        <header>CSS reference</header>
+
+        <p>
+          The main entry point for CSS documentation on MDN, where you'll find
+          detailed reference documentation for all features of the CSS language.
+          Want to know all the values a property can take? This is a good place
+          to go.
+        </p>
+
+        <p>
+          Use this CSS reference to browse an alphabetical index of all of the
+          standard CSS properties, pseudo-classes, pseudo-elements, data types,
+          functional notations and at-rules. You can also browse key CSS
+          concepts and a list of selectors organized by type. Also included is a
+          brief DOM-CSS / CSSOM reference.
+        </p>
+
+        <h2><strong>Basic rule syntax</strong></h2>
+
+        <h3>Style rule syntax</h3>
+
+        <pre>
+       <code>   
+       <span class="selector">style-rule ::= </span>
+               <span class="selector">selectors-list</span>  {
+                    properties-list
+            }
+        </code>
+    </pre>
+
+        <p>... where :</p>
+
+        <pre>
+       <code>   
+       <span class="property">selectors-list ::= </span>
+               <span>selector[ :pseudo-class ]  [ ::pseudo-element ]
+               [,  selectors-list]</span>
+        </code>
+        
+        <code>   
+       <span class="property">properties-list ::= </span>
+               [ <span class="property">property</span> :  value ]  [ ; properties-list ]
+        </code>
+    </pre>
+
+        <p>
+          The syntax for each specified value depends on the data type defined
+          for each specified property.
+        </p>
+
+        <h3>Style rule examples</h3>
+
+        <pre>
+        <code>   
+        <span class="selector">strong</span>   {  
+               <span class="property">color</span>:  red;
+        </code>
+        
+        <code>   
+        <span class="selector">div.menu-bar li:hover > ul</span>   {  
+               <span class="property">display</span>:  block;
+        }    
+        </code>
+    </pre>
+
+        <p>
+          For a beginner-level introduction to the syntax of selectors, see our
+          guide on CSS Selectors. Be aware that any syntax error in a rule
+          definition invalidates the entire rule. Invalid rules are ignored by
+          the browser. Note that CSS rule definitions are entirely (ASCII)
+          text-based, whereas DOM-CSS / CSSOM (the rule management system) is
+          object-based.
+        </p>
+      </section>
+
+      <section class="main-section" id="See_also">
+        <header>See also</header>
+
+        <p>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+            target="_blank"
+            title="developer.mozilla.org"
+            style="text-decoration: underline"
+            ><strong>CSS on MDN</strong></a
+          >
+        </p>
+
+        <p>
+          The main entry point for CSS documentation on MDN, where you'll find
+          detailed reference documentation for all features of the CSS language.
+          Want to know all the values a property can take? This is a good place
+          to go.
+        </p>
+      </section>
+    </main>
+
+    <!-- FreeCodeCamp CDN -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
